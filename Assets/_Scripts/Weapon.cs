@@ -12,11 +12,13 @@ public class Weapon : MonoBehaviour
     [Space]
     public int weaponType;
     public bool semi;
-    public string shotAnimName;
-    public string reloadName;
     public float reloadSpeed;
     public float weaponInterval;
     public AudioClip gunShot;
+    [Space]
+    public string shotAnimName;
+    public string reloadAnimName;
+    public string equipAnimName;
 
     public string Shoot(bool aiming)
     {
@@ -35,7 +37,7 @@ public class Weapon : MonoBehaviour
         reloading = true;
         StartCoroutine(ReloadCo());
     }
-
+    
     IEnumerator CoolDown()
     {
         yield return new WaitForSeconds(0.1f);

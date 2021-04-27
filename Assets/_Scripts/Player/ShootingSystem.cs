@@ -56,7 +56,7 @@ public class ShootingSystem : MonoBehaviour
     {
         if (currentGun.reloading == false && currentGun.cooldown == false)
         {
-            weaponsAnim.Play(currentGun.reloadName);
+            weaponsAnim.Play(currentGun.reloadAnimName);
             currentGun.Reload();
         }
     }
@@ -73,4 +73,10 @@ public class ShootingSystem : MonoBehaviour
         }
     }
 
+    public void SwapWeapon(Weapon newWeapon)
+    {
+        weaponsAnim.Play(newWeapon.equipAnimName);
+        currentGun = newWeapon;
+    }
+    
 }

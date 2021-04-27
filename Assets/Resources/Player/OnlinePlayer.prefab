@@ -1871,11 +1871,12 @@ MonoBehaviour:
   flash: {fileID: 5703635654486498408}
   weaponType: 0
   semi: 1
-  shotAnimName: RifleShot
-  reloadName: RifleReload
   reloadSpeed: 2.1
   weaponInterval: 0.8
   gunShot: {fileID: 0}
+  shotAnimName: RifleShot
+  reloadAnimName: RifleReload
+  equipAnimName: RifleEquip
 --- !u!1 &1977401649793354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,7 +3003,7 @@ Transform:
   - {fileID: 55692497658268880}
   m_Father: {fileID: 55233453841705722}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -5.038, z: 6.486}
 --- !u!1 &59165266071085462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3111,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: b0d3d6b053dcc694fa8523a27dc160c7, type: 2}
   - {fileID: 7400000, guid: 1102921616c01f84286f8c60bea2ea83, type: 2}
+  - {fileID: 7400000, guid: 39b7fe0d358935245b4d62ff39eb0779, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -3144,7 +3146,7 @@ Transform:
   - {fileID: 55450926669596620}
   m_Father: {fileID: 55233453841705722}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 7.545, z: 0.489}
 --- !u!1 &59226903281583746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3581,7 +3583,7 @@ Transform:
   - {fileID: 61810880153118714}
   m_Father: {fileID: 55233453841705722}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 32.283, z: 10.517}
 --- !u!1 &60574222700503468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4370,7 +4372,7 @@ Transform:
   - {fileID: 4774558404169847}
   m_Father: {fileID: 61790164842767858}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 3.655, z: 0}
+  m_LocalEulerAnglesHint: {x: 84.316, y: -49.942, z: 39.919}
 --- !u!1 &2273599557325707887
 GameObject:
   m_ObjectHideFlags: 0

@@ -56,6 +56,8 @@ public class FPSPlayer : MonoBehaviour
         pv = GetComponent<PhotonView>();
         pausescript = GetComponent<Pause>();
 
+        ss.SwapWeapon(ss.currentGun);
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
