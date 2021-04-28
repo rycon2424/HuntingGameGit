@@ -6,9 +6,14 @@ using Photon.Pun;
 public class Weapon : MonoBehaviour
 {
     [Header("Gun Stats")]
+    public string weaponName;
+    public int magSize;
+    public int currentAmmo;
+    public int mags;
     public bool cooldown;
     public bool reloading;
     public ParticleSystem flash;
+    public ParticleSystem TPflash;
     [Space]
     public int weaponType;
     public bool semi;
@@ -20,9 +25,9 @@ public class Weapon : MonoBehaviour
     public string reloadAnimName;
     public string equipAnimName;
 
-    public string Shoot(bool aiming)
+    public string Shoot()
     {
-        if (cooldown == true)
+        if (cooldown == true || currentAmmo == 0)
         {
             return "";
         }

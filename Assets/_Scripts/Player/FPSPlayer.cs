@@ -108,7 +108,7 @@ public class FPSPlayer : MonoBehaviour
     
     private void Gun()
     {
-        ss.ShootMechanic(this);
+        ss.ShootMechanic();
     }
     
     void ExitCrouch()
